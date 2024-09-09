@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* เพิ่มระยะห่างเนื้อหาข้างล่างเพื่อไม่ให้ถูกบัง */
+        .container {
+            margin-top: 70px; /* ปรับตามความสูงของแถบ w3-top */
+        }
+        .logo {
+            height: 40px; /* ขนาดของโลโก้ */
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <!-- แถบด้านบนที่มีโลโก้และข้อความ -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-        
-          <!-- Right-sided navbar links. Hide them on small screens -->
-          <div class="w3-right w3-hide-small">
-            <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-            <a href="disease.html" class="w3-bar-item w3-button">Disease</a>
-            <a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
-          </div>
+            <!-- โลโก้และข้อความ -->
+            <div class="w3-left">
+                <img src="AI.jpeg" alt="Logo" class="logo">
+                <span class="w3-bar-item">AI Medical Advisor</span>
+            </div>
+            <!-- ลิงก์เมนูด้านขวา -->
+            <div class="w3-right w3-hide-small">
+                <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+                <a href="disease.html" class="w3-bar-item w3-button">Disease</a>
+                <a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+            </div>
         </div>
-      </div>
+    </div>
 
+    <!-- เนื้อหาข้างล่าง -->
     <div class="container">
-        <h1><strong> Medical Advisor</strong></h1>
+        <h1><strong>Medical Advisor</strong></h1>
 
         <h2>Click in message Block</h2>
 
         <h3>**Advice** Please Wait 3s if you don't see Bot's Icon !</h3>
-        <p>If you want to get advice about health,
-            you can click the icon below.
+        <p>If you want to get advice about health, you can click the icon below.
             Please fill in your symptoms completely so that the bot can analyze the data efficiently and accurately.</p>
 
-        <p>If you want to see information about symptoms of various diseases,
-            you can click the left arrow to see information. We have referenced information from:</p>
+        <p>If you want to see information about symptoms of various diseases, you can click the left arrow to see information.
+            We have referenced information from:</p>
 
         <h3>Health New Zealand | Te Whatu Ora</h3>
         <a href="https://info.health.nz/" target="_blank">Click to go to Health New Zealand | Te Whatu Ora's Website</a>
@@ -81,10 +96,5 @@
             }
         });
     </script>
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-
 </body>
 </html>
