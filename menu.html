@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>AI Madical Advisor</title>
+    <title>AI Medical Advisor</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+        /* เพิ่มรูป Back.JPG เป็นพื้นหลัง */
+        body {
+            background-image: url('Back.JPG');
+            background-size: cover; /* ปรับขนาดรูปให้ครอบคลุมทั้งหน้า */
+            background-position: center; /* จัดรูปให้อยู่ตรงกลาง */
+            background-repeat: no-repeat; /* ไม่ให้รูปซ้ำ */
+            font-family: Arial, sans-serif;
+        }
+
         /* เพิ่มระยะห่างเนื้อหาข้างล่างเพื่อไม่ให้ถูกบัง */
         .container {
             margin-top: 70px; /* ปรับตามความสูงของแถบ w3-top */
+            background-color: rgba(255, 255, 255, 0.8); /* เพิ่มพื้นหลังขาวโปร่งใสให้กับเนื้อหา */
+            padding: 20px;
+            border-radius: 10px; /* เพิ่มความโค้งให้ขอบ */
         }
+
         .logo {
             height: 40px; /* ขนาดของโลโก้ */
             vertical-align: middle;
+        }
+
+        /* สไตล์สำหรับลูกศรนำทาง */
+        .arrow {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 36px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
         }
     </style>
 </head>
