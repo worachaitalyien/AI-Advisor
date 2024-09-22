@@ -52,6 +52,14 @@
         .arrow:hover {
             background-color: rgba(0, 0, 0, 0.7);
         }
+
+        /* จัดการให้ iframe อยู่ตรงกลาง */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+        }
     </style>
 </head>
 <body>
@@ -98,6 +106,13 @@
     <a href="about.html" class="arrow left">&#10094;</a>
     <a href="disease.html" class="arrow right">&#10095;</a>
 
+    <!-- Video Section -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wO3kabWQ1GY?si=wYgUI0bLSXsVwm-r" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
     <script>
         // Function to log chat data to Google Sheets
         function logChatToGoogleSheets(userMessage, botMessage) {
@@ -134,6 +149,5 @@
             }
         });
     </script>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wO3kabWQ1GY?si=wYgUI0bLSXsVwm-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
